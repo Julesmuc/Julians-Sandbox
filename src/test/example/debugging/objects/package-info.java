@@ -9,4 +9,4 @@
  * Resetting the value of a String creates a new object
  *
  */
-package test.example.objects;
+package test.example.debugging.objects;

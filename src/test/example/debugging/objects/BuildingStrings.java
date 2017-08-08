@@ -1,7 +1,7 @@
 /**
  * 
  */
-package test.example.objects;
+package test.example.debugging.objects;
 
 import java.util.Scanner;
 

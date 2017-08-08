@@ -1,4 +1,4 @@
-package test.example.variables;
+package test.example.debugging.variables;
 
 public class MathClasss {
 

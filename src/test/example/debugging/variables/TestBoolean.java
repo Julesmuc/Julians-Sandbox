@@ -1,7 +1,7 @@
 /**
  * 
  */
-package test.example.variables;
+package test.example.debugging.variables;
 
 /**
  * @author julian
