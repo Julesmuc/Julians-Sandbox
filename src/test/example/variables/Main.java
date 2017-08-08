@@ -8,7 +8,7 @@ public class Main {
 		double value = .012;
 		double sum = value + value + value;
 		
-		int inValue1 = 56;
+		int inValue1 = 58;
 		int inValue2= inValue1;
 		System.out.println(inValue2);
 		
