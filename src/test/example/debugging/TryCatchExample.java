@@ -8,9 +8,11 @@ public class TryCatchExample {
 		char[] chars = welcome.toCharArray();
 
 		try {
+			
 			if(chars.length < 10) {
 				throw (new Exception("My custom message"));
 			}
+			
 			char lastChar = chars[chars.length - 1];
 			System.out.println(lastChar);
 			
