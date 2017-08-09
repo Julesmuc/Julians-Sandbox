@@ -34,36 +34,48 @@ public class Main {
 		};
 		try(Scanner scanner = new Scanner(System.in)) {
 
-			System.out.println("Enter first number: ");
-			String in1 = scanner.nextLine();
-			double d1 = Double.parseDouble(in1);
+			double d1 = 0;
+			String in1 = "0";
+			try {
+				System.out.println("Enter first number: ");
+				 in1 = scanner.nextLine();
+				d1 = Double.parseDouble(in1);
+			} catch (NumberFormatException e) {
+				System.out.println( in1 +" is not a number!" );
+			}
 
-			System.out.println("Enter second number: ");
-			String in2 = scanner.nextLine();
-			double d2 = Double.parseDouble(in2);
+			double d2 = 0;
+			String in2 = "0";
+			try {
+				System.out.println("Enter second number: ");
+				 in2 = scanner.nextLine();
+				d2 = Double.parseDouble(in2);
+			} catch (NumberFormatException e) {
+				System.out.println(in2 + " is not a number!" );
+			}
 
 			System.out.println("Enter your operator: ");
 			String in3 = scanner.nextLine().toLowerCase();
-			for (String s : matchesplus)
-			if(in3.contains(s)) {
+			for (String s1 : matchesplus)
+			if(in3.contains(s1)) {
 				double	 res = d1 + d2;
 				System.out.println("Your calculation is: " + res);
 				return;
 			}
-			for (String s : matchesminus)
-			if(in3.contains(s)) {
+			for (String s2 : matchesminus)
+			if(in3.contains(s2)) {
 				double	 res = d1 - d2;
 				System.out.println("Your calculation is: " + res);
 				return;
 			}
-			for (String s : matchesdivide)
-			if(in3.contains(s)) {
+			for (String s3 : matchesdivide)
+			if(in3.contains(s3)) {
 				double	 res = d1 / d2;
 				System.out.println("Your calculation is: " + res);
 				return;
 			}
-			for (String s : matchesmultiply)
-			if(in3.contains(s)) {
+			for (String s4 : matchesmultiply)
+			if(in3.contains(s4)) {
 				double	 res = d1 * d2;
 				System.out.println("Your calculation is: " + res);
 				return;
