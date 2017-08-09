@@ -3,15 +3,17 @@ package complexCalculator;
 import java.util.Scanner;
 
 public class Calc2 {
+	
 	static double d1 = 0;
 	static String in1 = "0";
-
+	static double result = 0;
+	
 	public static void main(String[] args) {
 		double number1 = getNumberInput("Enter your first number: ");
 		double number2 = getNumberInput("Enter your second number: ");
 		String operator = getInput("Enter your operator: ");
 
-		double result = 0; 
+		 
 
 		try {
 
@@ -38,7 +40,7 @@ public class Calc2 {
 			case "multiply":
 			case "mal":
 			case "malnehmen":
-			case "Multiplikation":
+			case "multiplikation":
 				result = multiplyNumbers(number1, number2);
 				break;
 			default:
@@ -60,7 +62,7 @@ public class Calc2 {
 			d1 = Double.parseDouble(in1);
 
 		} catch (NumberFormatException e) {
-			System.out.println(in1 +" is not a number!");
+			System.out.println(in1 +" is not a number! Error " + e.getMessage());
 		}
 		return  d1;
 	}
@@ -68,7 +70,7 @@ public class Calc2 {
 	private static String getInput(String string)  {
 		System.out.println(string);
 		Scanner sc = new Scanner(System.in); 
-		return sc.nextLine();
+		return sc.nextLine().toLowerCase();
 	}
 	private static double addNumbers(Double number1, Double number2) {
 
