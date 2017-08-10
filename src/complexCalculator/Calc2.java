@@ -1,17 +1,17 @@
 package complexCalculator;
 
-import java.util.Scanner;
+import complexCalculator.utilities.InputHelper;
+import complexCalculator.utilities.MathCalculations;
 
 public class Calc2 {
 	
-	static double d1 = 0;
-	static String in1 = "0";
+	
 	static double result = 0;
 	
 	public static void main(String[] args) {
-		double number1 = getNumberInput("Enter your first number: ");
-		double number2 = getNumberInput("Enter your second number: ");
-		String operator = getInput("Enter your operator: ");
+		double number1 = InputHelper.getNumberInput("Enter your first number: ");
+		double number2 = InputHelper.getNumberInput("Enter your second number: ");
+		String operator = InputHelper.getInput("Enter your operator: ");
 
 		 
 
@@ -20,12 +20,12 @@ public class Calc2 {
 			switch (operator) {
 			case "+":
 			case "plus":
-				result = addNumbers(number1, number2);
+				result = MathCalculations.addNumbers(number1, number2);
 				break;
 
 			case "-":
 			case "minus":
-				result = substractNumbers(number1, number2);
+				result = MathCalculations.substractNumbers(number1, number2);
 				break;
 
 
@@ -34,17 +34,17 @@ public class Calc2 {
 			case "division":
 			case "teilen":
 			case "teilung":
-				result = divideNumbers(number1, number2);
+				result = MathCalculations.divideNumbers(number1, number2);
 				break;
 			case "*":
 			case "multiply":
 			case "mal":
 			case "malnehmen":
 			case "multiplikation":
-				result = multiplyNumbers(number1, number2);
+				result = MathCalculations.multiplyNumbers(number1, number2);
 				break;
 			default:
-				System.out.println("Sorry, i don´t know what " + operator + " means");
+				System.out.println("Sorry, i donï¿½t know what " + operator + " means");
 				return;
 			}
 			System.out.println("your calculation is: " + result);
@@ -54,36 +54,6 @@ public class Calc2 {
 		}
 	}
 
-	private static double getNumberInput(String string)  {
-		System.out.println(string);
-		try {
-			Scanner sc = new Scanner(System.in);
-			in1=sc.nextLine();
-			d1 = Double.parseDouble(in1);
-
-		} catch (NumberFormatException e) {
-			System.out.println(in1 +" is not a number! Error " + e.getMessage());
-		}
-		return  d1;
-	}
-
-	private static String getInput(String string)  {
-		System.out.println(string);
-		Scanner sc = new Scanner(System.in); 
-		return sc.nextLine().toLowerCase();
-	}
-	private static double addNumbers(Double number1, Double number2) {
-
-		return number1 + number2;
-	}
-	private static double substractNumbers(Double number1, Double number2) {
-
-		return number1 - number2;
-	}
-	private static double divideNumbers(Double number1, Double number2) {
-		return number1 / number2;
-	}
-	private static double multiplyNumbers(Double number1, Double number2) {
-		return number1 * number2;
-	}
+	
+	
 }
