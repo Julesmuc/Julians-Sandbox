@@ -5,15 +5,18 @@ import complexCalculator.utilities.MathCalculations;
 
 public class Calc2 {
 	
-	
 	static double result = 0;
 	
 	public static void main(String[] args) {
+		// Creating an instance of the Calc2 class
+		Calc2 calc = new Calc2(); 
+		calc.calculate();
+	}
+	//calculate is an instance method
+	protected void calculate() {
 		double number1 = InputHelper.getNumberInput("Enter your first number: ");
 		double number2 = InputHelper.getNumberInput("Enter your second number: ");
 		String operator = InputHelper.getInput("Enter your operator: ");
-
-		 
 
 		try {
 
@@ -27,8 +30,6 @@ public class Calc2 {
 			case "minus":
 				result = MathCalculations.substractNumbers(number1, number2);
 				break;
-
-
 			case "/":
 			case "divide":
 			case "division":
@@ -48,12 +49,8 @@ public class Calc2 {
 				return;
 			}
 			System.out.println("your calculation is: " + result);
-
 		} catch (Exception e) {
 			System.out.println("Problem with calculation, code: " + e.getMessage());
 		}
 	}
-
-	
-	
 }

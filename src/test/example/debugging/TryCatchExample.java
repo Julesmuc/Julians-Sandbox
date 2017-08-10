@@ -2,6 +2,7 @@ package test.example.debugging;
 
 public class TryCatchExample {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		
 		String welcome = "Welcome!"; 
