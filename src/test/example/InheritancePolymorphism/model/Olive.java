@@ -1,6 +1,6 @@
 package test.example.InheritancePolymorphism.model;
 
-public class Olive {
+public abstract class Olive {
 	
 	
 	private OliveName name =OliveName.KALAMATA;
@@ -28,12 +28,15 @@ public class Olive {
 		this.color = color;
 	}
 	public int crush() {
-		System.out.println("OUCH");
+		String msg = name +", from "+ getOrigin() +": " + oil + " units";
+		System.out.println(msg);
 		return oil;
 	}
+	
+	
 	public void setOil(int oil) {
 		this.oil = oil;
 	}
-	
+	public abstract String getOrigin();
 	
 }

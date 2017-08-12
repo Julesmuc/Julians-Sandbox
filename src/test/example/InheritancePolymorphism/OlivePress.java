@@ -11,7 +11,7 @@ public class OlivePress implements Press{
 	public int getOil(List<Olive> olives) {
 		int totalOil = currentOil ;
 		for (Olive o : olives) {
-			System.out.println(o.getName());
+//			System.out.println(o.getName());
 			totalOil += o.crush();
 			
 		}

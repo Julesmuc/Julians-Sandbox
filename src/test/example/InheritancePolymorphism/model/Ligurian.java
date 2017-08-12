@@ -5,4 +5,10 @@ public class Ligurian extends Olive{
 		super(OliveName.LIGURIAN,OliveColor.BLACK, 4);
 	}
 
+	@Override
+	public String getOrigin() {
+		// TODO Auto-generated method stub
+		return "Italy";
+	}
+
 }
