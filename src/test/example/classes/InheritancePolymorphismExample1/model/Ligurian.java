@@ -1,4 +1,4 @@
-package test.example.InheritancePolymorphism.model;
+package test.example.classes.InheritancePolymorphismExample1.model;
 
 public class Ligurian extends Olive{
 	public Ligurian() {

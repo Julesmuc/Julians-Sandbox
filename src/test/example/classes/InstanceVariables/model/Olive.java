@@ -1,16 +1,16 @@
-package test.example.InheritancePolymorphism.model;
+package test.example.classes.InstanceVariables.model;
 
-public abstract class Olive {
+public class Olive {
 	
 	
 	private OliveName name =OliveName.KALAMATA;
-	private OliveColor color = OliveColor.PURPLE;
+	private long color = 0x2E0854;
 	private int oil = 3;
 	
 	public Olive() {}
 	
 	//Constructor method
-	public Olive(OliveName name, OliveColor color, int oil) {
+	public Olive(OliveName name, long color, int oil) {
 		this.name = name;
 		this.color = color;
 		this.oil = oil;
@@ -21,22 +21,19 @@ public abstract class Olive {
 	public void setName(OliveName name) {
 		this.name = name;
 	}
-	public OliveColor getColor() {
+	public long getColor() {
 		return color;
 	}
-	public void setColor(OliveColor color) {
+	public void setColor(long color) {
 		this.color = color;
 	}
 	public int crush() {
-		String msg = name +", from "+ getOrigin() +": " + oil + " units";
-		System.out.println(msg);
+		System.out.println("OUCH");
 		return oil;
 	}
-	
-	
 	public void setOil(int oil) {
 		this.oil = oil;
 	}
-	public abstract String getOrigin();
+	
 	
 }

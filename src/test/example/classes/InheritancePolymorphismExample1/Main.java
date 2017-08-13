@@ -1,11 +1,11 @@
-package test.example.InheritancePolymorphism;
+package test.example.classes.InheritancePolymorphismExample1;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import test.example.InheritancePolymorphism.model.Kalamata;
-import test.example.InheritancePolymorphism.model.Ligurian;
-import test.example.InheritancePolymorphism.model.Olive;
+import test.example.classes.InheritancePolymorphismExample1.model.Kalamata;
+import test.example.classes.InheritancePolymorphismExample1.model.Ligurian;
+import test.example.classes.InheritancePolymorphismExample1.model.Olive;
 
 public class Main {
 

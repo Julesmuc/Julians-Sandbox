@@ -1,10 +1,10 @@
-package test.example.InstanceVariables;
+package test.example.classes.InstanceVariables;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import test.example.InstanceVariables.model.Olive;
-import test.example.InstanceVariables.model.OliveName;
+import test.example.classes.InstanceVariables.model.Olive;
+import test.example.classes.InstanceVariables.model.OliveName;
 
 public class Main {
 

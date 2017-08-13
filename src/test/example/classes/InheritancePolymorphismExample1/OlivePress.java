@@ -1,8 +1,8 @@
-package test.example.InheritancePolymorphism;
+package test.example.classes.InheritancePolymorphismExample1;
 
 import java.util.List;
 
-import test.example.InheritancePolymorphism.model.Olive;
+import test.example.classes.InheritancePolymorphismExample1.model.Olive;
 
 public class OlivePress implements Press{
 	

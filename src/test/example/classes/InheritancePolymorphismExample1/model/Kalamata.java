@@ -1,4 +1,4 @@
-package test.example.InheritancePolymorphism.model;
+package test.example.classes.InheritancePolymorphismExample1.model;
 
 public class Kalamata extends Olive{
 	public Kalamata() {

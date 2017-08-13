@@ -1,4 +1,4 @@
-package test.example.InstanceVariables.model;
+package test.example.classes.InstanceVariables.model;
 
 public enum OliveName {
 	KALAMATA("Kalamata"), LIGURIAN("Ligurian");
