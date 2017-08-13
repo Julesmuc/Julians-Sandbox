@@ -5,4 +5,4 @@
  * @author Julian Schroeter
  *
  */
-package SimpleCalculator;
+package calculators.SimpleCalculator;

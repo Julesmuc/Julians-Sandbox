@@ -1,7 +1,7 @@
 /**
  * 
  */
-package SimpleCalculator;
+package calculators.SimpleCalculator;
 
 import java.util.Scanner;
 

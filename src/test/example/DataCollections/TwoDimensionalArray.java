@@ -1,4 +1,4 @@
-package exampleDataCollections;
+package test.example.DataCollections;
 
 public class TwoDimensionalArray {
 

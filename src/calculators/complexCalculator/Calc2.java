@@ -1,7 +1,7 @@
-package complexCalculator;
+package calculators.complexCalculator;
 
-import complexCalculator.utilities.InputHelper;
-import complexCalculator.utilities.MathCalculations;
+import calculators.complexCalculator.utilities.InputHelper;
+import calculators.complexCalculator.utilities.MathCalculations;
 
 public class Calc2 {
 	

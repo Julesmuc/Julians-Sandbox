@@ -1,4 +1,4 @@
-package paintCalc;
+package calculators.paintCalc;
 
 import java.util.Scanner;
 

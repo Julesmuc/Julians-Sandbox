@@ -1,4 +1,4 @@
-package complexCalculator.utilities;
+package calculators.complexCalculator.utilities;
 
 import java.util.Scanner;
 
