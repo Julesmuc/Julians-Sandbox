@@ -1,4 +1,4 @@
-package test.example.debugging.variables;
+package test.example.variables;
 
 import java.math.BigDecimal;
 

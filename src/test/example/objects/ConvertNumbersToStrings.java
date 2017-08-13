@@ -1,4 +1,4 @@
-package test.example.debugging.objects;
+package test.example.objects;
 
 import java.text.NumberFormat;
 import java.util.Locale;

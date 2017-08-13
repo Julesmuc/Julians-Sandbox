@@ -1,7 +1,7 @@
 /**
  * 
  */
-package test.example.debugging.objects;
+package test.example.objects;
 
 import java.text.DateFormat;
 import java.time.LocalDate;
