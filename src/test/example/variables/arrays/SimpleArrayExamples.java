@@ -1,4 +1,4 @@
-package test.example.DataCollections;
+package test.example.variables.arrays;
 
 import java.util.Arrays;
 

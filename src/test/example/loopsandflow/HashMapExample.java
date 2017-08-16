@@ -1,4 +1,4 @@
-package test.example.DataCollections;
+package test.example.loopsandflow;
 
 import java.util.HashMap;
 import java.util.Map;

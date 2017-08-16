@@ -1,4 +1,4 @@
-package test.example.managingprogramflow;
+package test.example.loopsandflow;
 
 import java.util.Scanner;
 
