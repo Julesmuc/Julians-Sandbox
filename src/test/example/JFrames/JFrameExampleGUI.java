@@ -1,10 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package test.example.JFrames;
-import javax.swing.border.BevelBorder;
 import java.awt.Color;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.GroupLayout;
@@ -13,22 +7,12 @@ import javax.swing.JCheckBox;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
 import javax.swing.border.TitledBorder;
-import javax.swing.UIManager;
 import javax.swing.border.CompoundBorder;
 
-/**
- *
- * @author Peggy Fisher
- */
 public class JFrameExampleGUI extends javax.swing.JFrame {
 
-    /**
-	 * 
-	 */
 	private static final long serialVersionUID = 500387275147502272L;
-	/**
-     * Creates new form ContactUI
-     */
+	
     public JFrameExampleGUI() {
         initComponents();
     }
