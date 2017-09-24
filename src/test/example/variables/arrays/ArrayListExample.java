@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class ArrayListExample {
 	private static Scanner in;
 	public static void main(String[] args) {
-		in = new Scanner(System.in);
+		setIn(new Scanner(System.in));
 		//generic Notation
 		List <String> list = new ArrayList <>();
 		// adding items
@@ -40,6 +40,12 @@ public class ArrayListExample {
 		System.out.println(mls.toString());
 		mls.remove(1);
 		System.out.println("After: \n" + mls.toString());
+	}
+	public static Scanner getIn() {
+		return in;
+	}
+	public static void setIn(Scanner in) {
+		ArrayListExample.in = in;
 	}
 	
 	}
